@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.easymock:easymock:4.0.2" type="repository">
+    <properties maven-id="org.easymock:easymock:4.0.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/easymock-4.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/objenesis-3.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

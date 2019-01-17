@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a92be2a-cd03-4fe4-b014-37591ec9cc2d" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Camix/CamixTestSuite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/Camix/communication/CanalChatTestEx1EasyMock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/camix/service/CanalChat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="53" column="46" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="46" />
+              <folding>
+                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test/Camix/CamixTestSuite.java" />
+        <option value="$PROJECT_DIR$/test/Camix/communication/CanalChatTestEx1EasyMock.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="y" value="31" />
+    <option name="width" value="960" />
+    <option name="height" value="1049" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Camix_Java-v0.4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Camix_Java-v0.4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Camix_Java-v0.4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Camix_Java-v0.4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="camix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Camix_Java-v0.4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="camix" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Camix_Java-v0.4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="camix" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Camix_Java-v0.4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Camix_Java-v0.4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Camix" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/Camix" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientNonPresent_v2">
+    <configuration name="Camix_Java" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="camix.Camix" />
+      <module name="Camix_Java-v0.4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanalChatTestEx1EasyMock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Camix_Java-v0.4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Camix.communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Camix.communication" />
+      <option name="MAIN_CLASS_NAME" value="Camix.communication.CanalChatTestEx1EasyMock" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientNonPresent_v2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Camix_Java-v0.4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Camix.communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Camix.communication" />
+      <option name="MAIN_CLASS_NAME" value="Camix.communication.CanalChatTestEx1EasyMock" />
+      <option name="METHOD_NAME" value="ajoutClientTest_clientNonPresent_v2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Camix_Java" />
+      <item itemvalue="JUnit.CanalChatTestEx1EasyMock" />
+      <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientNonPresent_v2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientNonPresent_v2" />
+        <item itemvalue="JUnit.CanalChatTestEx1EasyMock" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a92be2a-cd03-4fe4-b014-37591ec9cc2d" name="Default Changelist" comment="" />
+      <created>1547650590201</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547650590201</updated>
+      <workItem from="1547650593383" duration="6526000" />
+      <workItem from="1547665494361" duration="245000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 16h 51m 30s.xml">
+      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 16h 52m 58s.xml">
+      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 16h 54m 02s.xml">
+      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 00m 54s.xml">
+      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 07s.xml">
+      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 19s.xml">
+      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 37s.xml">
+      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 43s.xml">
+      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 50s.xml">
+      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6771000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="31" width="1920" height="1049" extended-state="7" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13631523" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297062" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/camix/communication/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camix/communication/ConnexionServeur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Camix/CamixTestSuite" />
+    <entry file="file://$PROJECT_DIR$/test/Camix/CamixTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camix/service/CanalChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="53" column="46" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="46" />
+          <folding>
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Camix/communication/CanalChatTestEx1EasyMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Camix_Java-v0.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.easymock:easymock:4.0.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
