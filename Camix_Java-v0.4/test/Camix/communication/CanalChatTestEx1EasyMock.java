@@ -12,14 +12,16 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.Hashtable;
 
-import static org.junit.Assert.fail;
+import static org.easymock.EasyMock.partialMockBuilder;
 
 
 @RunWith(EasyMockRunner.class)
 public class CanalChatTestEx1EasyMock {
 
+    // Crée un mock du client
     @Mock
     private ClientChat clientMock;
 
@@ -45,12 +47,14 @@ public class CanalChatTestEx1EasyMock {
      */
     @Test
     public void ajoutClientTest_clientNonPresent_v1(){
+        // Initialisation du chat
         final CanalChat canal = new CanalChat("mon_canal");
 
         final String id ="1";
 
         final int nbreClientAttendu = 1;
 
+        // On donne le nbre de fois que doit être exécuté
         EasyMock.expect(
                 clientMock.donneId()
         ).andReturn(
@@ -131,6 +135,7 @@ public class CanalChatTestEx1EasyMock {
      * @methods CanalChat.estPresent
      * @methods CanalChat.donneNombreCLients
      */
+    @Test
     public void ajoutClientTest_clientNonPresent_v2(){
         final CanalChat canal = new CanalChat("mon_canal");
 
@@ -151,15 +156,15 @@ public class CanalChatTestEx1EasyMock {
         // Chargement du mock du client
         EasyMock.replay(this.clientMock);
 
-        canal.ajouteClient(clientMock);
-
-        // TODO: A compléter introspection
         try {
-            attribut = ClientChat.class.getDeclaredField(clients);
+            canal.ajouteClient(clientMock);
+            attribut = CanalChat.class.getDeclaredField(clients);
             attribut.setAccessible(true);
-            Hashtable<String, ClientChat> clientActuel = (Hashtable<String, ClientChat>) attribut.get(this.clientMock);
+            Hashtable<String, ClientChat> canalActuel = (Hashtable<String, ClientChat>) attribut.get(canal);
 
-            Assert.assertEquals("Nombre de clients", clientActuel.size(), 1);
+            Assert.assertEquals("Nombre de clients", nbreClientAttendu, canalActuel.size());
+            Assert.assertTrue("Contient bien le client", canalActuel.contains(clientMock));
+            Assert.assertTrue("Contient un id", canalActuel.containsKey(id));
 
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
@@ -172,20 +177,28 @@ public class CanalChatTestEx1EasyMock {
         EasyMock.verify(this.clientMock);
     }
 
+
     /**
      * Test l'ajout d'un nouveau client dans le canal de discussion
+     *
+     * Utilisation de l'introspection pour satisfaire les effets de bords
      *
      * @methods ClientChat.donneId
      * @methods CanalChat.ajouteClient
      * @methods CanalChat.estPresent
      * @methods CanalChat.donneNombreCLients
      */
+    @Test
     public void ajoutClientTest_clientPresent_v2(){
         final CanalChat canal = new CanalChat("mon_canal");
 
         final String id ="1";
 
         final int nbreClientAttendu = 1;
+
+        /* Pour l'accès à la liste de clients (privé) */
+        String clients = "clients";
+        Field attribut;
 
         EasyMock.expect(
                 clientMock.donneId()
@@ -196,13 +209,120 @@ public class CanalChatTestEx1EasyMock {
         // Chargement du mock du client
         EasyMock.replay(this.clientMock);
 
-        canal.ajouteClient(clientMock);
+        try {
+            canal.ajouteClient(clientMock);
+            canal.ajouteClient(clientMock);
+            attribut = CanalChat.class.getDeclaredField(clients);
+            attribut.setAccessible(true);
+            Hashtable<String, ClientChat> canalActuel = (Hashtable<String, ClientChat>) attribut.get(canal);
 
-        canal.ajouteClient(clientMock);
+            Assert.assertEquals("Nombre de clients", nbreClientAttendu, canalActuel.size());
+            Assert.assertTrue("Contient bien le client", canalActuel.contains(clientMock));
+            Assert.assertTrue("Contient un id", canalActuel.containsKey(id));
 
-        // TODO: A compléter introspection
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
 
         // Vérification des sollicitations faites au mock.
         EasyMock.verify(this.clientMock);
     }
+
+    /**
+     * Test l'ajout d'un nouveau client dans le canal de discussion
+     *
+     * Utilisation de l'introspection pour satisfaire les préconditions
+     *
+     * @methods ClientChat.donneId
+     * @methods CanalChat.ajouteClient
+     * @methods CanalChat.put
+     */
+    @Test
+    public void ajoutClientTest_clientPresent_v2_1(){
+
+        final CanalChat canal = new CanalChat("mon_canal");
+
+        final String id ="1";
+
+        final int nbreClientAttendu = 1;
+
+        /* Pour l'accès à la liste de clients (privé) */
+        String clients = "clients";
+        Field attribut;
+
+        EasyMock.expect(
+                clientMock.donneId()
+        ).andReturn(
+                id
+        ).times(1);
+
+        // Chargement du mock du client
+        EasyMock.replay(this.clientMock);
+
+        try {
+            attribut = CanalChat.class.getDeclaredField(clients);
+            attribut.setAccessible(true);
+            Hashtable<String, ClientChat> canalActuel = (Hashtable<String, ClientChat>) attribut.get(canal);
+
+            // Ajout du client manuellement
+            canalActuel.put(id, clientMock);
+
+            // Ajout d'un client
+            canal.ajouteClient(clientMock);
+
+            Assert.assertEquals("Nombre de clients", nbreClientAttendu, canalActuel.size());
+            Assert.assertTrue("Contient bien le client", canalActuel.contains(clientMock));
+            Assert.assertTrue("Contient un id", canalActuel.containsKey(id));
+
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
+        // Vérification des sollicitations faites au mock.
+        EasyMock.verify(this.clientMock);
+    }
+
+    /**
+     * Test l'ajout d'un nouveau client dans le canal de discussion
+     *
+     * Utilisation de l'introspection pour satisfaire les préconditions
+     *
+     * @methods ClientChat.donneId
+     * @methods CanalChat.ajouteClient
+     * @methods CanalChat.put
+     */
+    @Test
+    public void ajoutClientTest_clientPresent_v3(){
+
+        // Crée un mock partiel du canal
+        CanalChat canalMock = partialMockBuilder(CanalChat.class).withConstructor("mon_canal")
+                .addMockedMethod("estPresent").createMock();
+
+        final int nbreClientAttendu = 0;
+
+        EasyMock.expect(
+                canalMock.estPresent(clientMock)
+        ).andReturn(
+                true
+        ).times(1);
+
+        // Chargement du mock du client et du canal
+        EasyMock.replay(this.clientMock);
+        EasyMock.replay(canalMock);
+
+        // Ajout du client
+        canalMock.ajouteClient(clientMock);
+
+        // Test de l'ajout du client
+        Assert.assertEquals("Nombre de clients", nbreClientAttendu, (int) canalMock.donneNombreClients());
+
+        // Vérification des sollicitations faites aux mocks.
+        EasyMock.verify(this.clientMock);
+        EasyMock.verify(canalMock);
+    }
+
 }

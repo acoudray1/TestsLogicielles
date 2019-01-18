@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a92be2a-cd03-4fe4-b014-37591ec9cc2d" name="Default Changelist" comment="" />
+    <list default="true" id="2a92be2a-cd03-4fe4-b014-37591ec9cc2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Camix/communication/ServiceChatTestEx2EasyMock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/template.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloJUnit/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Camix_Java-v0.4/Camix/communication/CanalChatTestEx1EasyMock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Camix_Java-v0.4/Camix/communication/CanalChatTestEx1EasyMock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Camix/communication/CanalChatTestEx1EasyMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Camix/communication/CanalChatTestEx1EasyMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloJUnit/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloJUnit/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloJUnit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloJUnit/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +34,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/Camix/communication/CanalChatTestEx1EasyMock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+            <state relative-caret-position="401">
+              <caret line="274" column="31" selection-start-line="274" selection-start-column="12" selection-end-line="274" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/Camix/communication/ServiceChatTestEx2EasyMock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,10 +59,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/camix/service/ServiceChat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/template.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camix/service/CanalChat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="53" column="46" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="46" />
+            <state relative-caret-position="188">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
               <folding>
                 <element signature="e#676#677#0" expanded="true" />
                 <element signature="e#709#710#0" expanded="true" />
@@ -59,26 +100,31 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/Camix/CamixTestSuite.java" />
         <option value="$PROJECT_DIR$/test/Camix/communication/CanalChatTestEx1EasyMock.java" />
+        <option value="$PROJECT_DIR$/test/Camix/communication/CanalChatTestEx2EasyMock.java" />
+        <option value="$PROJECT_DIR$/test/template.txt" />
+        <option value="$PROJECT_DIR$/test/Camix/communication/ServiceChatTestEx2EasyMock.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="31" />
     <option name="width" value="960" />
     <option name="height" value="1049" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,10 +173,19 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="Camix" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Camix_Java-v0.4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Camix" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,7 +195,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HelloJUnit" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -166,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientNonPresent_v2">
+  <component name="RunManager" selected="JUnit.ServiceChatTestEx2EasyMock.informeDepartClientTest">
     <configuration name="Camix_Java" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="camix.Camix" />
       <module name="Camix_Java-v0.4" />
@@ -189,7 +244,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientNonPresent_v2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Camix_Java-v0.4" />
       <extension name="coverage">
         <pattern>
@@ -199,7 +254,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="Camix.communication" />
       <option name="MAIN_CLASS_NAME" value="Camix.communication.CanalChatTestEx1EasyMock" />
-      <option name="METHOD_NAME" value="ajoutClientTest_clientNonPresent_v2" />
+      <option name="METHOD_NAME" value="ajoutClientTest_clientPresent_v2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v2_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Camix_Java-v0.4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Camix.communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Camix.communication" />
+      <option name="MAIN_CLASS_NAME" value="Camix.communication.CanalChatTestEx1EasyMock" />
+      <option name="METHOD_NAME" value="ajoutClientTest_clientPresent_v2_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Camix_Java-v0.4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Camix.communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Camix.communication" />
+      <option name="MAIN_CLASS_NAME" value="Camix.communication.CanalChatTestEx1EasyMock" />
+      <option name="METHOD_NAME" value="ajoutClientTest_clientPresent_v3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceChatTestEx2EasyMock.informeDepartClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Camix_Java-v0.4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Camix.communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Camix.communication" />
+      <option name="MAIN_CLASS_NAME" value="Camix.communication.ServiceChatTestEx2EasyMock" />
+      <option name="METHOD_NAME" value="informeDepartClientTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -208,12 +311,18 @@
     <list>
       <item itemvalue="Application.Camix_Java" />
       <item itemvalue="JUnit.CanalChatTestEx1EasyMock" />
-      <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientNonPresent_v2" />
+      <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v2" />
+      <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v2_1" />
+      <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" />
+      <item itemvalue="JUnit.ServiceChatTestEx2EasyMock.informeDepartClientTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientNonPresent_v2" />
+        <item itemvalue="JUnit.ServiceChatTestEx2EasyMock.informeDepartClientTest" />
+        <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" />
         <item itemvalue="JUnit.CanalChatTestEx1EasyMock" />
+        <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v2_1" />
+        <item itemvalue="JUnit.CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v2" />
       </list>
     </recent_temporary>
   </component>
@@ -229,53 +338,59 @@
       <updated>1547650590201</updated>
       <workItem from="1547650593383" duration="6526000" />
       <workItem from="1547665494361" duration="245000" />
+      <workItem from="1547735567727" duration="5228000" />
+      <workItem from="1547800407127" duration="8586000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 16h 51m 30s.xml">
-      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    <history-entry file="CanalChatTestEx1EasyMock_ajoutClientTest_clientPresent_v3 - 2019.01.18 at 10h 49m 15s.xml">
+      <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 16h 52m 58s.xml">
-      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    <history-entry file="CanalChatTestEx1EasyMock_ajoutClientTest_clientPresent_v3 - 2019.01.18 at 10h 51m 30s.xml">
+      <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 16h 54m 02s.xml">
-      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    <history-entry file="CanalChatTestEx1EasyMock_ajoutClientTest_clientPresent_v3 - 2019.01.18 at 10h 51m 37s.xml">
+      <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 00m 54s.xml">
-      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    <history-entry file="CanalChatTestEx1EasyMock_ajoutClientTest_clientPresent_v3 - 2019.01.18 at 10h 54m 17s.xml">
+      <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 07s.xml">
-      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    <history-entry file="CanalChatTestEx1EasyMock_ajoutClientTest_clientPresent_v3 - 2019.01.18 at 10h 56m 01s.xml">
+      <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 19s.xml">
-      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    <history-entry file="CanalChatTestEx1EasyMock_ajoutClientTest_clientPresent_v3 - 2019.01.18 at 10h 56m 51s.xml">
+      <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 37s.xml">
-      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    <history-entry file="CanalChatTestEx1EasyMock_ajoutClientTest_clientPresent_v3 - 2019.01.18 at 10h 57m 29s.xml">
+      <configuration name="CanalChatTestEx1EasyMock.ajoutClientTest_clientPresent_v3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 43s.xml">
-      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    <history-entry file="ServiceChatTestEx2EasyMock_informeDepartClientTest - 2019.01.18 at 12h 01m 08s.xml">
+      <configuration name="ServiceChatTestEx2EasyMock.informeDepartClientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanalChatTestEx1EasyMock - 2019.01.16 at 17h 10m 50s.xml">
-      <configuration name="CanalChatTestEx1EasyMock" configurationId="JUnit" />
+    <history-entry file="ServiceChatTestEx2EasyMock_informeDepartClientTest - 2019.01.18 at 12h 12m 50s.xml">
+      <configuration name="ServiceChatTestEx2EasyMock.informeDepartClientTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceChatTestEx2EasyMock_informeDepartClientTest - 2019.01.18 at 12h 15m 03s.xml">
+      <configuration name="ServiceChatTestEx2EasyMock.informeDepartClientTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6771000" />
+    <option name="totallyTimeSpent" value="20585000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="31" width="1920" height="1049" extended-state="7" />
+    <frame x="0" y="31" width="1920" height="1049" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13631523" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13844515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297062" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -307,14 +422,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camix/communication/ConnexionServeur.java">
+    <entry file="file://$PROJECT_DIR$/test/Camix/CamixTestSuite" />
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/internal/requests/FilterRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="315">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Camix/CamixTestSuite" />
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/jdk/internal/reflect/DelegatingMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="565" selection-start-line="565" selection-end-line="565" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camix/service/ClientChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1129">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/Camix/CamixTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -325,10 +468,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/util/Hashtable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="471" column="26" selection-start-line="471" selection-start-column="26" selection-end-line="471" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/camix/service/CanalChat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="53" column="46" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="46" />
+        <state relative-caret-position="188">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding>
             <element signature="e#676#677#0" expanded="true" />
             <element signature="e#709#710#0" expanded="true" />
@@ -338,10 +488,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/template.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/Camix/communication/CanalChatTestEx1EasyMock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+        <state relative-caret-position="401">
+          <caret line="274" column="31" selection-start-line="274" selection-start-column="12" selection-end-line="274" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camix/service/ServiceChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camix/communication/ConnexionServeur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Camix/communication/ServiceChatTestEx2EasyMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
