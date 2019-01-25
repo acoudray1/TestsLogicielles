@@ -44,7 +44,7 @@ public class ServiceChatTestEx2EasyMock {
     public void informeDepartClientTest() throws IOException {
 
         // Variables de départ
-        final ServiceChat service = new ServiceChat("mon_canal", 13579);
+        final ServiceChat service = new ServiceChat("mon_canal");
 
         String surnom = "un_surnom";
         String message = String.format(ProtocoleChat.MESSAGE_DEPART_CHAT, surnom);
