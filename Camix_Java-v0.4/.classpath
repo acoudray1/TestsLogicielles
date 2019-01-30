@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" output="target/test-classes" path="test">
+		<attributes>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="src" path="jmeter/src"/>
 	<classpathentry kind="lib" path="lib/byte-buddy-1.9.3.jar"/>
 	<classpathentry kind="lib" path="lib/byte-buddy-agent-1.9.3.jar"/>
 	<classpathentry kind="lib" path="lib/easymock-4.0.2.jar"/>
@@ -11,5 +21,7 @@
 	<classpathentry kind="lib" path="lib/mockito-core-2.23.4.jar"/>
 	<classpathentry kind="lib" path="lib/objenesis-2.6.jar"/>
 	<classpathentry kind="lib" path="lib/objenesis-3.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/robin/Programmes/apache-jmeter-5.0/lib/ext/ApacheJMeter_tcp.jar"/>
+	<classpathentry kind="lib" path="/home/robin/Programmes/apache-jmeter-5.0/lib/ext/ApacheJMeter_core.jar"/>
 	<classpathentry kind="output" path="out/production/Camix_Java-v0.4"/>
 </classpath>
