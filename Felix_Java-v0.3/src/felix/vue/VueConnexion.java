@@ -86,7 +86,7 @@ public class VueConnexion extends VueFelix implements ActionListener, Runnable {
 		final Integer hauteur = Integer.parseInt(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_HAUTEUR"));
 
 		this.fenetre = new Fenetre(largeur, hauteur, Felix.CONFIGURATION.getString("FENETRE_CONNEXION_TITRE"));
-
+		this.fenetre.setName(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_TITRE")); // set name for Jemmy
 		this.fenetre.setResizable(false);
 
 		this.construireFenetre();
@@ -112,6 +112,7 @@ public class VueConnexion extends VueFelix implements ActionListener, Runnable {
 		this.labelIp = new JLabel("IP : ");
 		this.labelIp.setPreferredSize(new Dimension(30, 20));
 		this.ipSaisie = new JTextField(Felix.CONFIGURATION.getString("ADRESSE_CHAT"), 30);
+		this.ipSaisie.setName(Felix.CONFIGURATION.getString("TEXT_FIELD_SAISIE_IP"));	// set name for Jemmy
 		this.panelIP.add(labelIp);
 		this.panelIP.add(ipSaisie);
 
@@ -122,6 +123,7 @@ public class VueConnexion extends VueFelix implements ActionListener, Runnable {
 		this.labelPort = new JLabel("PORT : ");
 		this.labelPort.setPreferredSize(new Dimension(50, 20));
 		this.portSaisie = new JTextField(Felix.CONFIGURATION.getString("PORT_CHAT"), 5);
+		this.portSaisie.setName(Felix.CONFIGURATION.getString("TEXT_FIELD_SAISIE_PORT"));	// set name for Jemmy
 		this.panelPort.add(labelPort);
 		this.panelPort.add(portSaisie);
 
@@ -129,6 +131,7 @@ public class VueConnexion extends VueFelix implements ActionListener, Runnable {
 		 * Message informatif
 		 */
 		this.message = new JTextField(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_DEFAUT"));
+		this.message.setName(Felix.CONFIGURATION.getString("TEXT_FIELD_MESSAGE"));	// set name for Jemmy
 		this.message.setEditable(false);
 		this.message.setEnabled(false);
 		this.message.setPreferredSize(new Dimension(350, 20));
@@ -138,6 +141,7 @@ public class VueConnexion extends VueFelix implements ActionListener, Runnable {
 		 * Bouton de connexion
 		 */
 		this.buttonConnexion = new JButton("Connexion");
+		this.buttonConnexion.setName(Felix.CONFIGURATION.getString("BOUTON_CONNEXION"));	// set name for Jemmy
 		this.buttonConnexion.setPreferredSize(new Dimension(200, 20));
 		this.buttonConnexion.addActionListener(this);
 		this.panelButton.add(buttonConnexion);
