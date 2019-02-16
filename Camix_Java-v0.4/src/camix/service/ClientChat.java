@@ -170,7 +170,13 @@ public class ClientChat extends Thread
 				case ProtocoleChat.COMMANDE_AFFICHE_CLIENT : 
 					this.chat.afficheInformationsClient(this);
 					break;
-				
+				case ProtocoleChat.COMMANDE_QUITTER_CHAT:
+					try {
+						this.chat.quitterChat(this);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+					break;
 				default : 
 					this.chat.afficheAide(this);
 					break;		

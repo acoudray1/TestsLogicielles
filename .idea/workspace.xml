@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32e144d6-a6d6-4775-b850-da117c941809" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Felix_Java-v0.3/test/felix/FelixTestConnexionPossible.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Felix_Java-v0.3/test/felix/FelixTestConnexionImpossible.java" beforeDir="false" afterPath="$PROJECT_DIR$/Felix_Java-v0.3/test/felix/FelixTestConnexionImpossible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Felix_Java-v0.3/felix/FelixTestConnexionImpossible.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Felix_Java-v0.3/felix/FelixTestConnexionImpossible.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Camix_Java-v0.4/src/camix/communication/ProtocoleChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Camix_Java-v0.4/src/camix/communication/ProtocoleChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ClientChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ClientChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ServiceChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ServiceChat.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,43 +17,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/config/Configuration.properties">
+        <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/controleur/VueFelix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="9" selection-start-line="2" selection-end-line="2" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/test/felix/FelixTestConnexionImpossible.java">
+        <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/communication/Connexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/test/felix/FelixTestConnexionPossible.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="175" column="30" lean-forward="true" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/Felix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="225">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -61,8 +37,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/vue/VueConnexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1579">
+            <state relative-caret-position="-475">
               <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ServiceChat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="375" column="48" lean-forward="true" selection-start-line="375" selection-start-column="48" selection-end-line="375" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/CanalChat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1140">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/communication/ConnexionServeur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/net/ServerSocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2925">
+              <caret line="586" column="16" selection-start-line="586" selection-start-column="16" selection-end-line="586" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/vue/VueChat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="200" column="13" selection-start-line="200" selection-start-column="13" selection-end-line="200" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ClientChat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="174" column="52" selection-start-line="174" selection-start-column="52" selection-end-line="174" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/Camix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -76,6 +118,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>VueChat</find>
+      <find>envoieMessage</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -87,12 +135,15 @@
         <option value="$PROJECT_DIR$/Felix_Java-v0.3/test/felix/testfaux.java" />
         <option value="$PROJECT_DIR$/Felix_Java-v0.3/test/felix/FelixTestConnexionImpossible.java" />
         <option value="$PROJECT_DIR$/Felix_Java-v0.3/test/felix/FelixTestConnexionPossible.java" />
+        <option value="$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ClientChat.java" />
+        <option value="$PROJECT_DIR$/Camix_Java-v0.4/src/camix/communication/ProtocoleChat.java" />
+        <option value="$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ServiceChat.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="31" />
-    <option name="width" value="960" />
+    <option name="width" value="1920" />
     <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -108,6 +159,40 @@
           <expand>
             <path>
               <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="camix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="camix" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camix_Java-v0.4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="camix" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
               <item name="Felix_Java-v0.3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -120,6 +205,20 @@
               <item name="Felix_Java-v0.3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="felix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Felix_Java-v0.3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="felix" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Felix_Java-v0.3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="felix" type="462c0819:PsiDirectoryNode" />
+              <item name="controleur" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tests_logiciels" type="b2602c69:ProjectViewProjectNode" />
@@ -148,7 +247,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tests_Logiciels_Monix_Morix" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -174,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FelixTestConnexionPossible">
+  <component name="RunManager" selected="Application.Felix">
     <configuration name="Camix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="camix.Camix" />
       <module name="Camix_Java-v0.4" />
@@ -249,9 +348,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FelixTestConnexionPossible" />
         <item itemvalue="Application.Felix" />
         <item itemvalue="Application.Camix" />
+        <item itemvalue="JUnit.FelixTestConnexionPossible" />
         <item itemvalue="JUnit.FelixTestConnexionImpossible.testConnexionImpossible" />
         <item itemvalue="JUnit.FelixTestConnexionImpossible" />
       </list>
@@ -273,20 +372,13 @@
       <workItem from="1548858259763" duration="5797000" />
       <workItem from="1548918435710" duration="3000" />
       <workItem from="1548918452516" duration="12000" />
-      <workItem from="1549718308086" duration="9427000" />
+      <workItem from="1549718308086" duration="9869000" />
+      <workItem from="1550171218078" duration="298000" />
+      <workItem from="1550333355226" duration="5302000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FelixTestConnexionImpossible - 2019.02.09 at 15h 47m 21s.xml">
-      <configuration name="FelixTestConnexionImpossible" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FelixTestConnexionImpossible - 2019.02.09 at 15h 48m 03s.xml">
-      <configuration name="FelixTestConnexionImpossible" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FelixTestConnexionImpossible - 2019.02.09 at 15h 49m 29s.xml">
-      <configuration name="FelixTestConnexionImpossible" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FelixTestConnexionImpossible - 2019.02.09 at 15h 57m 01s.xml">
       <configuration name="FelixTestConnexionImpossible" configurationId="JUnit" />
     </history-entry>
@@ -308,15 +400,24 @@
     <history-entry file="FelixTestConnexionPossible - 2019.02.09 at 17h 22m 29s.xml">
       <configuration name="FelixTestConnexionPossible" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FelixTestConnexionPossible - 2019.02.09 at 17h 23m 21s.xml">
+      <configuration name="FelixTestConnexionPossible" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FelixTestConnexionPossible - 2019.02.16 at 17h 19m 39s.xml">
+      <configuration name="FelixTestConnexionPossible" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FelixTestConnexionPossible - 2019.02.16 at 17h 20m 26s.xml">
+      <configuration name="FelixTestConnexionPossible" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21583000" />
+    <option name="totallyTimeSpent" value="27625000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="31" width="1920" height="1049" extended-state="6" />
+    <frame x="0" y="31" width="1920" height="1049" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657082" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27103302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -332,7 +433,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005325" side_tool="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32897604" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32897604" />
       <window_info anchor="bottom" id="Tool Output" order="13" />
       <window_info anchor="bottom" id="ANTLR Preview" order="14" />
@@ -361,20 +462,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/test/felix/testfaux.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/vue/VueConnexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1579">
-          <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/test/felix/testfaux.java" />
     <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/config/Configuration.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -384,8 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/test/felix/FelixTestConnexionImpossible.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+        <state relative-caret-position="3120">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -401,8 +489,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/test/felix/FelixTestConnexionPossible.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="175" column="30" lean-forward="true" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
+        <state relative-caret-position="2445">
+          <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/controleur/ControleurFelix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/config/Configuration.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/communication/ConnexionClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/communication/ProtocoleChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="254" column="71" selection-start-line="254" selection-start-column="71" selection-end-line="254" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/controleur/VueFelix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/Camix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/communication/Connexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ClientChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="174" column="52" selection-start-line="174" selection-start-column="52" selection-end-line="174" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/vue/VueChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="200" column="13" selection-start-line="200" selection-start-column="13" selection-end-line="200" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Felix_Java-v0.3/src/felix/vue/VueConnexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/CanalChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/communication/ConnexionServeur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/net/ServerSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2925">
+          <caret line="586" column="16" selection-start-line="586" selection-start-column="16" selection-end-line="586" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Camix_Java-v0.4/src/camix/service/ServiceChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="375" column="48" lean-forward="true" selection-start-line="375" selection-start-column="48" selection-end-line="375" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

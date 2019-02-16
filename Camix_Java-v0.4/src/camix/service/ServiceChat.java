@@ -84,7 +84,7 @@ public final class ServiceChat
 	 * 
 	 * @throws IOException exception d'entrée/sortie.
 	 *
-	 * @see ServiceChatClient
+	 *
 	 */
 	private void service() throws IOException 
 	{
@@ -378,5 +378,20 @@ public final class ServiceChat
 		
 		// Fermeture de la connexion du client.
 		client.fermeConnexion();
+	}
+
+	/**
+	 * Sortie du chat
+	 *
+	 * @param  client le client concerné
+	 * @param
+	 *
+	 */
+	public void quitterChat(ClientChat client) throws IOException {
+		final String messageSortie = String.format(ProtocoleChat.MESSAGE_INFORMATION_SORTIE_CHAT);
+
+		client.envoieMessage(messageSortie);
+		this.fermeConnexion(client);
+
 	}
 }

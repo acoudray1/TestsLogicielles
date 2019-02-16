@@ -60,6 +60,11 @@ public final class ProtocoleChat
 	public static final char COMMANDE_AFFICHE_AIDE = 'h';
 
 	/**
+	 * Commande permettant de quitter le chat
+	 */
+	public static final char COMMANDE_QUITTER_CHAT = 'q';
+
+	/**
 	 * Message à transmettre dans le chat de la part d'un client.
 	 * 
 	 * <p><ul>
@@ -209,7 +214,12 @@ public final class ProtocoleChat
 	public static final String MESSAGE_INFORMATIONS_PERSONNELLES = "* Informations personnelles : %n"
 																	+ "   Surnom : %s %n"
 																	+ "   Canal  : %s %n";
-	
+
+	/**
+	 * Message d'information de sortie du chat.
+	 */
+	public  static final String MESSAGE_INFORMATION_SORTIE_CHAT = "* Sortie du chat.";
+
 	/**
 	 * Espacement pour le message d'aide.
 	 */
@@ -239,7 +249,10 @@ public final class ProtocoleChat
 			+ ProtocoleChat.COMMANDE_AFFICHE_CLIENT + " : afficher ses informations ;%n"
 			
 			+ ProtocoleChat.ESPACE_MESSAGE_AIDE + ProtocoleChat.COMMANDE_CARACTERE
-			+ ProtocoleChat.COMMANDE_AFFICHE_AIDE + " : afficher l'aide .%n";
+			+ ProtocoleChat.COMMANDE_AFFICHE_AIDE + " : afficher l'aide ;%n"
+
+			+ ProtocoleChat.ESPACE_MESSAGE_AIDE + ProtocoleChat.COMMANDE_CARACTERE
+			+ ProtocoleChat.COMMANDE_QUITTER_CHAT + " : quitter le chat.%n";
 
 	
 	/**
