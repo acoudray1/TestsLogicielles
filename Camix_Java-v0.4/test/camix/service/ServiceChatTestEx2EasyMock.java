@@ -1,4 +1,4 @@
-package Camix.communication;
+package camix.service;
 
 import camix.communication.ProtocoleChat;
 import camix.service.CanalChat;

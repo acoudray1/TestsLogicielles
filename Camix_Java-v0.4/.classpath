@@ -23,5 +23,5 @@
 	<classpathentry kind="lib" path="lib/objenesis-3.0.1.jar"/>
 	<classpathentry kind="lib" path="/home/robin/Programmes/apache-jmeter-5.0/lib/ext/ApacheJMeter_tcp.jar"/>
 	<classpathentry kind="lib" path="/home/robin/Programmes/apache-jmeter-5.0/lib/ext/ApacheJMeter_core.jar"/>
-	<classpathentry kind="output" path="out/production/Camix_Java-v0.4"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
