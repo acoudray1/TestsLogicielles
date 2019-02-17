@@ -78,7 +78,6 @@ public class FelixTestConnexionPossible {
     public void setUp() {
         final Integer timeout = 3000;
         JemmyProperties.setCurrentTimeout("FrameWaiter.WaitFrameTimeout", timeout);
-        JemmyProperties.setCurrentTimeout("ComponentOperator.WaitStateTimeout", timeout);
 
         // Création d'un mock de contrôleur.
         this.controleurMock = EasyMock.createMock(ControleurFelix.class);

@@ -15,6 +15,7 @@ import org.netbeans.jemmy.util.NameComponentChooser;
 
 import javax.swing.*;
 import java.awt.*;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -32,20 +33,19 @@ import java.util.Collection;
 public class FelixTestConnexionImpossible {
 
     /**
-     * Vue Connexion nécessaire au test
+     * L'application à tester
      */
-    private static VueConnexion vueConnexion;
+    private static ClassReference application;
 
     /**
-     * Mock d'un contrôleur nécessaire aux tests.
+     * Les paramètres de lancement de l'application.
      */
-    private ControleurFelix controleurMock;
-
+    private static String[] parametres;
 
     /**
-     * La fenêtre de la vue.
+     * La fenetre de connexion à utiliser pour les tests
      */
-    private static JFrameOperator fenetre;
+    private static  JFrameOperator fenetreConnexion;
 
     /**
      * Les champs texte pour l'adresse IP, le port, message.
@@ -68,24 +68,20 @@ public class FelixTestConnexionImpossible {
      * @see org.netbeans.jemmy.JemmyProperties
      *
      */
-    @Before
-    public void setUp() {
+    @BeforeClass
+    public static void setUp() throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException {
         final Integer timeout = 3000;
         JemmyProperties.setCurrentTimeout("FrameWaiter.WaitFrameTimeout", timeout);
         JemmyProperties.setCurrentTimeout("ComponentOperator.WaitStateTimeout", timeout);
 
-        // Création d'un mock de contrôleur.
-        this.controleurMock = EasyMock.createMock(ControleurFelix.class);
-        Assert.assertNotNull(this.controleurMock);
-
-        // Création de la vue nécessaire aux tests.
-        // La vue s'appuie sur le mock de contrôleur.
-        this.vueConnexion = new VueConnexion(this.controleurMock);
-        Assert.assertNotNull(this.vueConnexion);
-
-        // Affichage de la vue et récupération de cette vue.
-        this.vueConnexion.affiche();
-        this.recuperationVue();
+        try {
+            FelixTestConnexionImpossible.application = new ClassReference("felix.Felix");
+            FelixTestConnexionImpossible.parametres = new String[1];
+            FelixTestConnexionImpossible.parametres[0] = "";
+            lanceInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -101,38 +97,56 @@ public class FelixTestConnexionImpossible {
         // ici : 2 secondes.
         final Long timeout = Long.valueOf(2000);
         Thread.sleep(timeout);
+    }
 
-        if (vueConnexion != null) {
-            vueConnexion.ferme();
+    private static void lanceInstance() throws Exception
+    {
+        try {
+            // Lancement d'une application.
+            FelixTestConnexionImpossible.application.startApplication(FelixTestConnexionImpossible.parametres);
         }
+        catch (InvocationTargetException e) {
+            Assert.fail("Problème d'invocation de l'application : " + e.getMessage());
+            throw e;
+        }
+        catch (NoSuchMethodException e) {
+            Assert.fail("Problème d'accès à la méthode invoquée : " + e.getMessage());
+            throw e;
+        }
+        // Récupération de l'interface.
+        recuperationInterface();
+    }
+
+    private static void recuperationInterface() {
+        recuperationVue();
     }
 
     /**
-     * Récupération de la vue caisse.
+     * Récupération de la vue connexion.
      *
      * <p>Cette méthode concerne la récupération de la fenêtre, avec titre adéquat,
      * et des widgets attendus pour cette vue.</p>
      */
-    private void recuperationVue()
+    private static void recuperationVue()
     {
         // Récupération de la fenêtre de la vue de connexion (par nom)
-        fenetre = new JFrameOperator(new NameComponentChooser(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_TITRE")));
-        Assert.assertNotNull("La fenêtre de la vue connexion n'est pas accessible.", fenetre);
+        fenetreConnexion = new JFrameOperator(new NameComponentChooser(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_TITRE")));
+        Assert.assertNotNull("La fenêtre de la vue connexion n'est pas accessible.", fenetreConnexion);
 
         // Récupération du champ de saisie de l'adresse IP (par nom)
-        texteIP = new JTextFieldOperator(fenetre, new NameComponentChooser(Felix.CONFIGURATION.getString("TEXT_FIELD_SAISIE_IP")));
+        texteIP = new JTextFieldOperator(fenetreConnexion, new NameComponentChooser(Felix.CONFIGURATION.getString("TEXT_FIELD_SAISIE_IP")));
         Assert.assertNotNull("Le champ de saisie de l'adresse IP n'est pas accessible.", texteIP);
 
         // Récupération du champ de saisie du port (par nom)
-        textePort = new JTextFieldOperator(fenetre, new NameComponentChooser(Felix.CONFIGURATION.getString("TEXT_FIELD_SAISIE_PORT")));
+        textePort = new JTextFieldOperator(fenetreConnexion, new NameComponentChooser(Felix.CONFIGURATION.getString("TEXT_FIELD_SAISIE_PORT")));
         Assert.assertNotNull("Le champ de saisie du port n'est pas accessible.", textePort);
 
         // Récupération du message (par nom)
-        texteMessage = new JTextFieldOperator(fenetre, new NameComponentChooser(Felix.CONFIGURATION.getString("TEXT_FIELD_MESSAGE")));
+        texteMessage = new JTextFieldOperator(fenetreConnexion, new NameComponentChooser(Felix.CONFIGURATION.getString("TEXT_FIELD_MESSAGE")));
         Assert.assertNotNull("Le champ du message n'est pas accessible.", texteIP);
 
         // Récupération du bouton d'ajout d'un produit à la vente (par nom)
-        boutonConnecter = new JButtonOperator(fenetre, new NameComponentChooser(Felix.CONFIGURATION.getString("BOUTON_CONNEXION")));
+        boutonConnecter = new JButtonOperator(fenetreConnexion, new NameComponentChooser(Felix.CONFIGURATION.getString("BOUTON_CONNEXION")));
         Assert.assertNotNull("Le bouton de connexion n'est pas accessible.", boutonConnecter);
     }
 
@@ -157,7 +171,7 @@ public class FelixTestConnexionImpossible {
          */
         try {
             // Récupération des libellés de la vue
-            final String fenetreActuelle = this.fenetre.getTitle();
+            final String fenetreActuelle = this.fenetreConnexion.getTitle();
             final String texteIPActuel = this.texteIP.getText();
             final String textePortActuel = this.textePort.getText();
             final String texteMessageActuel = this.texteMessage.getText();
@@ -198,15 +212,15 @@ public class FelixTestConnexionImpossible {
         /*
          * Données de test.
          */
-        long timeout = Long.parseLong(Felix.CONFIGURATION.getString("CONNEXION_TIMEOUT"));
+        long timeout = Long.valueOf(2000);
         textePort.clearText();
         texteIP.clearText();
 
         Thread.sleep(timeout);
 
         // insertion de nouvelles valeurs
-        texteIP.typeText(ip);
-        textePort.typeText(port);
+        texteIP.setText(ip);
+        textePort.setText(port);
 
         final String messageAttenduAvantErreur = String.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION"),
                 ip, port);
@@ -216,7 +230,7 @@ public class FelixTestConnexionImpossible {
         boutonConnecter.clickMouse();
 
         try {
-            this.texteMessage.waitText(messageAttenduAvantErreur);
+            texteMessage.waitText(messageAttenduAvantErreur);
         } catch (TimeoutExpiredException e) {
             Assert.fail("Informations attendus incorrectes");
         }
@@ -225,7 +239,7 @@ public class FelixTestConnexionImpossible {
 
         // test de la valeur du message après erreur de connexion
         try {
-            this.texteMessage.waitText(messageAttenduApresErreur);
+            texteMessage.waitText(messageAttenduApresErreur);
         } catch (TimeoutExpiredException e) {
             Assert.fail("Informations attendus incorrectes");
         }
