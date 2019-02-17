@@ -13,6 +13,7 @@ import org.netbeans.jemmy.JemmyProperties;
 import org.netbeans.jemmy.TimeoutExpiredException;
 import org.netbeans.jemmy.operators.JButtonOperator;
 import org.netbeans.jemmy.operators.JFrameOperator;
+import org.netbeans.jemmy.operators.JLabelOperator;
 import org.netbeans.jemmy.operators.JTextFieldOperator;
 import org.netbeans.jemmy.util.NameComponentChooser;
 
@@ -26,7 +27,7 @@ import java.util.List;
  * @author Axel COUDRAY
  *
  */
-@RunWith(Parameterized.class)
+// @RunWith(Parameterized.class)
 public class FelixConnexionImpossible {
     /**
      * Vue connexion à tester
@@ -56,7 +57,7 @@ public class FelixConnexionImpossible {
     /**
      * Le champ d'information de connexion de la vue
      */
-    private static JTextFieldOperator messageInfo;
+    private static JLabelOperator messageInfo;
 
     /**
      * Mock d'un controlleur pour les tests de la vue
@@ -123,7 +124,7 @@ public class FelixConnexionImpossible {
         Assert.assertNotNull("Le champ de saisie du port n'est pas accessible.", this.textePort);
 
         // Récupération du message (par nom)
-        this.messageInfo = new JTextFieldOperator(this.fenetre, new NameComponentChooser(Felix.CONFIGURATION.getString("TEXT_FIELD_MESSAGE")));
+        this.messageInfo = new JLabelOperator(this.fenetre, new NameComponentChooser(Felix.CONFIGURATION.getString("TEXT_FIELD_MESSAGE")));
         Assert.assertNotNull("Le champ du message n'est pas accessible.", this.messageInfo);
 
         // Récupération du bouton d'ajout d'un produit à la vente (par nom)
