@@ -7,12 +7,17 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import org.netbeans.jemmy.JemmyProperties;
 import org.netbeans.jemmy.TimeoutExpiredException;
 import org.netbeans.jemmy.operators.JButtonOperator;
 import org.netbeans.jemmy.operators.JFrameOperator;
 import org.netbeans.jemmy.operators.JTextFieldOperator;
 import org.netbeans.jemmy.util.NameComponentChooser;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Classe de tests unitaires JUnit 4 de la classe VueConnexion.
@@ -21,6 +26,7 @@ import org.netbeans.jemmy.util.NameComponentChooser;
  * @author Axel COUDRAY
  *
  */
+@RunWith(Parameterized.class)
 public class FelixConnexionImpossible {
     /**
      * Vue connexion à tester
@@ -132,18 +138,14 @@ public class FelixConnexionImpossible {
     @Test
     public void testInitialiseVue()
     {
-        /*
-         * Données de test
-         */
+        // Données de test
         final String fenetreAttendu = Felix.CONFIGURATION.getString("FENETRE_CONNEXION_TITRE");
         final String texteIPAttendu = Felix.CONFIGURATION.getString("ADRESSE_CHAT");
         final String textePortAttendu = Felix.CONFIGURATION.getString("PORT_CHAT");
         final String texteMessageAttendu = Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_DEFAUT");
         final String boutonConnecterAttendu = "Connexion";
 
-        /*
-         * Execution du test
-         */
+        // Execution du test
         try {
             // Récupération des libellés de la vue
             final String fenetreActuelle = this.fenetre.getTitle();
@@ -182,6 +184,21 @@ public class FelixConnexionImpossible {
         testConnexionImpossibleParametre("192.168.254.254", "12345");
     }
 
+    /*@Parameterized.Parameters
+    public List<Object[]> parametre() {
+        final Object[][] data = new Object[][] {
+                {"0123456789", "12345"},
+                {"265.300.256.700", "12345"},
+                {"aaa.bbb.256.700", "12345"},
+                {"127.0.0.1", "abc34"},
+                {"127.0.0.1", "123456"},
+                {"216.58.213.174", "12345"},
+                {"127.0.0.1", "80"},
+                {"192.168.254.254", "12345"}
+        };
+        return Arrays.asList(data);
+    }*/
+
     /**
      * Methode de test de connexion impossible prenant en parametre les valeurs à renseigner
      * dans les champs de port et d'@ip de la vue
@@ -191,10 +208,8 @@ public class FelixConnexionImpossible {
 
         //Initialisation et préparation des données
         long timeout = Long.valueOf(2000);
-        final String messageAttenduAvantErreur = String.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION"),
-                ip, port);
-        final String messageAttenduApresErreur = String.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION_IMPOSSIBLE"),
-                ip, port);
+        final String messageAttenduAvantErreur = String.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION"), ip, port);
+        final String messageAttenduApresErreur = String.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION_IMPOSSIBLE"), ip, port);
 
         // Démarrage du test
         try {
@@ -203,22 +218,22 @@ public class FelixConnexionImpossible {
             this.texteIP.clearText();
 
             // Insertion des données
-            this.texteIP.setText(ip);
-            this.textePort.setText(port);
+            this.texteIP.typeText(ip);
+            this.textePort.typeText(port);
 
             // Clique sur le bouton
             this.boutonConnexion.clickMouse();
 
             // Vérification du changement de libellé
-            this.messageInfo.waitText(messageAttenduAvantErreur);
-        } catch (TimeoutExpiredException e) {
-            Assert.fail("Informations attendus incorrectes");
-        }
+            Assert.assertEquals("Le resultat actuel et celui attendu sont différents", messageAttenduAvantErreur, this.messageInfo.getText());
+            //this.messageInfo.waitText(messageAttenduAvantErreur);
 
-        Thread.sleep(timeout);
+            // Attente
+            Thread.sleep(timeout);
 
-        try {
-            this.messageInfo.waitText(messageAttenduApresErreur);
+            // Vérification du changement et de la connexon impossible
+            //Assert.assertEquals("Le resultat actuel et celui attendu sont différents", messageAttenduApresErreur, this.messageInfo.getText());
+            //this.messageInfo.waitText(messageAttenduApresErreur);
         } catch (TimeoutExpiredException e) {
             Assert.fail("Informations attendus incorrectes");
         }
