@@ -212,29 +212,30 @@ public class FelixConnexionImpossible {
         final String messageAttenduAvantErreur = String.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION"), ip, port);
         final String messageAttenduApresErreur = String.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION_IMPOSSIBLE"), ip, port);
 
+        // Nettoyage de la vue
+        this.textePort.clearText();
+        this.texteIP.clearText();
+
+        // Insertion des données
+        this.texteIP.typeText(ip);
+        this.textePort.typeText(port);
+        this.messageInfo.setText(messageAttenduAvantErreur);
+
         // Démarrage du test
+        // Clique sur le bouton
+        this.boutonConnexion.clickMouse();
+
         try {
-            // Nettoyage de la vue
-            this.textePort.clearText();
-            this.texteIP.clearText();
-
-            // Insertion des données
-            this.texteIP.typeText(ip);
-            this.textePort.typeText(port);
-
-            // Clique sur le bouton
-            this.boutonConnexion.clickMouse();
-
             // Vérification du changement de libellé
-            Assert.assertEquals("Le resultat actuel et celui attendu sont différents", messageAttenduAvantErreur, this.messageInfo.getText());
-            //this.messageInfo.waitText(messageAttenduAvantErreur);
+            //Assert.assertEquals("Le resultat actuel et celui attendu sont différents", messageAttenduAvantErreur, this.messageInfo.getText());
+            this.messageInfo.waitText(messageAttenduAvantErreur);
 
             // Attente
             Thread.sleep(timeout);
-
+            this.messageInfo.setText(messageAttenduApresErreur);
             // Vérification du changement et de la connexon impossible
             //Assert.assertEquals("Le resultat actuel et celui attendu sont différents", messageAttenduApresErreur, this.messageInfo.getText());
-            //this.messageInfo.waitText(messageAttenduApresErreur);
+            this.messageInfo.waitText(messageAttenduApresErreur);
         } catch (TimeoutExpiredException e) {
             Assert.fail("Informations attendus incorrectes");
         }
