@@ -39,8 +39,9 @@ public class ServiceChatTestQuitter {
 		final String message = String.format(ProtocoleChat.MESSAGE_DEPART_CHAT, surnom);
 
 		// Ce qui est attendu
+		// Je voulais mocker l'envoie de message pour qu'il n'appelle pas la connexion
+		// mais je ne sais pas comment faire pour que la méthode ne s'exécute pas
 		clientMock.envoieMessage(messageSortie);
-		EasyMock.expectLastCall();
 		EasyMock.expect(clientMock.donneSurnom()).andReturn(surnom).times(1);
 		clientMock.envoieContacts(message);
 		clientMock.fermeConnexion();

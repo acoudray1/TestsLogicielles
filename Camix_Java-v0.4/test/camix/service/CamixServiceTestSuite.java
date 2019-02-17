@@ -12,7 +12,8 @@ import org.junit.runners.Suite.SuiteClasses;
  *
  */
 @RunWith(Suite.class)
-@SuiteClasses({ CanalChatTestEx1EasyMock.class, CanalChatTestEx1Mockito.class, ServiceChatTestEx2EasyMock.class })
+@SuiteClasses({ CanalChatTestEx1EasyMock.class, CanalChatTestEx1Mockito.class, ServiceChatTestEx2EasyMock.class,
+		ServiceChatTestQuitter.class })
 public class CamixServiceTestSuite {
 	/* empty class */
 }

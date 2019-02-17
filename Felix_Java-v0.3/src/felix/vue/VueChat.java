@@ -26,25 +26,24 @@ import felix.controleur.VueFelix;
  * 
  * Cette vue permet d'échanger des messages avec d'autres utilisateurs du chat.
  * 
- * Cette vue est une vue active : elle possède une méthode d'activation qui lance 
- * un thread de réception des messages du chat.
+ * Cette vue est une vue active : elle possède une méthode d'activation qui
+ * lance un thread de réception des messages du chat.
  * 
  * @version 3.0
- * @author Matthias Brun 
+ * @author Matthias Brun
  *
  */
-public class VueChat extends VueFelix implements ActionListener, Runnable
-{
+public class VueChat extends VueFelix implements ActionListener, Runnable {
 	/**
 	 * La fenêtre de la vue.
 	 */
-	private Fenetre	fenetre;
+	private Fenetre fenetre;
 
 	/**
 	 * Le conteneur de la vue.
 	 */
 	private Container contenu;
-	
+
 	/**
 	 * Le panneau de la fenêtre pour saisir les messages.
 	 */
@@ -54,7 +53,7 @@ public class VueChat extends VueFelix implements ActionListener, Runnable
 	 * Le panneau de la fenêtre pour afficher les messages du chat.
 	 */
 	private JPanel panChatMessages;
-	
+
 	/**
 	 * Le champs de saisi des messages.
 	 */
@@ -79,27 +78,27 @@ public class VueChat extends VueFelix implements ActionListener, Runnable
 	 * Le style des messages du chat.
 	 */
 	private transient Style documentChatMessagesStyle;
-	
+
 	/**
 	 * Le nom du style des messages du chat.
 	 */
 	private static final String STYLENAME = "documentChatMessagesStyle";
-	
+
 	/**
 	 * Constructeur de la vue chat.
 	 * 
 	 * @param controleur le contrôleur du chat auquel appartient la vue.
 	 */
-	public VueChat(ControleurFelix controleur) 
-	{
+	public VueChat(ControleurFelix controleur) {
 		super(controleur);
-		
+
 		final Integer largeur = Integer.parseInt(Felix.CONFIGURATION.getString("FENETRE_CHAT_LARGEUR"));
 		final Integer hauteur = Integer.parseInt(Felix.CONFIGURATION.getString("FENETRE_CHAT_HAUTEUR"));
-		
+
 		this.fenetre = new Fenetre(largeur, hauteur, Felix.CONFIGURATION.getString("FENETRE_CHAT_TITRE"));
-		
-		this.construireFenetre(largeur, hauteur);	
+		this.fenetre.setName(Felix.CONFIGURATION.getString("FENETRE_CHAT_TITRE"));
+
+		this.construireFenetre(largeur, hauteur);
 	}
 
 	/**
@@ -108,18 +107,16 @@ public class VueChat extends VueFelix implements ActionListener, Runnable
 	 * @param largeur la largeur de la fenêtre.
 	 * @param hauteur la hauteur de la fenêtre.
 	 */
-	private void construireFenetre(Integer largeur, Integer hauteur)
-	{
+	private void construireFenetre(Integer largeur, Integer hauteur) {
 		this.construirePanneaux();
 		this.construireControles(largeur, hauteur);
 	}
-	
+
 	/**
 	 * Construire les panneaux de la fenêtre.
 	 *
 	 */
-	private void construirePanneaux()
-	{
+	private void construirePanneaux() {
 		this.contenu = this.fenetre.getContentPane();
 		this.contenu.setLayout(new FlowLayout());
 
@@ -137,14 +134,14 @@ public class VueChat extends VueFelix implements ActionListener, Runnable
 	 * @param hauteur la hauteur de la fenêtre.
 	 *
 	 */
-	private void construireControles(Integer largeur, Integer hauteur)
-	{
+	private void construireControles(Integer largeur, Integer hauteur) {
 		final Integer mLargeur = Integer.parseInt(Felix.CONFIGURATION.getString("FENETRE_CHAT_MARGE_LARGEUR"));
 		final Integer mHauteur = Integer.parseInt(Felix.CONFIGURATION.getString("FENETRE_CHAT_MARGE_HAUTEUR"));
 		final Integer hMessage = Integer.parseInt(Felix.CONFIGURATION.getString("FENETRE_CHAT_HAUTEUR_MESSAGE"));
 
 		/* message */
 		this.texteMessage = new JTextField();
+		this.texteMessage.setName(Felix.CONFIGURATION.getString("FENETRE_CHAT_MESSAGE"));
 		this.texteMessage.setPreferredSize(new Dimension(largeur - mLargeur, hMessage));
 		this.texteMessage.setHorizontalAlignment(JTextField.LEFT);
 		this.texteMessage.setEditable(true);
@@ -152,9 +149,10 @@ public class VueChat extends VueFelix implements ActionListener, Runnable
 		this.texteMessage.requestFocus();
 		this.texteMessage.addActionListener(this);
 		this.panMessage.add(this.texteMessage);
-	
+
 		/* chat messages */
 		this.texteChatMessages = new JTextPane();
+		this.texteChatMessages.setName(Felix.CONFIGURATION.getString("FENETRE_CHAT_CHAT"));
 		this.texteChatMessages.setEditable(false);
 
 		this.documentChatMessages = this.texteChatMessages.getStyledDocument();
@@ -164,7 +162,7 @@ public class VueChat extends VueFelix implements ActionListener, Runnable
 
 		this.defilementChatMessages = new JScrollPane(this.texteChatMessages);
 		this.defilementChatMessages.setPreferredSize(new Dimension(largeur - mLargeur, hauteur - mHauteur));
-        	this.defilementChatMessages.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+		this.defilementChatMessages.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
 		this.panChatMessages.add(this.defilementChatMessages);
 	}
@@ -176,8 +174,7 @@ public class VueChat extends VueFelix implements ActionListener, Runnable
 	 *
 	 * @see java.awt.event.ActionListener
 	 */
-	public void actionPerformed(ActionEvent ev)
-	{
+	public void actionPerformed(ActionEvent ev) {
 		final String message = ev.getActionCommand();
 
 		try {
@@ -186,8 +183,7 @@ public class VueChat extends VueFelix implements ActionListener, Runnable
 
 			// Efface le champs de saisi du message.
 			this.texteMessage.setText("");
-		} 
-		catch (IOException ex) {
+		} catch (IOException ex) {
 			System.err.println("Écriture du message impossible.");
 			System.err.println(ex.getMessage());
 		}
@@ -196,69 +192,57 @@ public class VueChat extends VueFelix implements ActionListener, Runnable
 	/**
 	 * Point d'entrée du thread de réception des messages du chat.
 	 */
-	public void run() 
-	{
+	public void run() {
 		try {
 			while (true) {
 				// Reception d'un message.
 				final String message = this.donneControleur().donneConnexion().lire();
 
 				// Écriture du message dans la zone des messages du chat (à la suite).
-				this.documentChatMessages.insertString(
-					this.documentChatMessages.getLength(),
-					message + System.getProperty("line.separator"), 
-					this.documentChatMessages.getStyle(STYLENAME)
-				);
+				this.documentChatMessages.insertString(this.documentChatMessages.getLength(),
+						message + System.getProperty("line.separator"), this.documentChatMessages.getStyle(STYLENAME));
 
 				// Force l'affichage du dernier message reçu.
 				this.texteChatMessages.setCaretPosition(this.documentChatMessages.getLength());
 			}
-		}
-		catch (BadLocationException ex) {
+		} catch (BadLocationException ex) {
 			System.err.println("Affichage des messages du chat impossible.");
 			System.err.println(ex.getMessage());
-		}
-		catch (EOFException ex) {
+		} catch (EOFException ex) {
 			System.err.println("Connexion interrompue avec le serveur du chat.");
-		}
-		catch (IOException ex) {
+		} catch (IOException ex) {
 			System.err.println("Lecture des messages du chat impossible.");
 			System.err.println(ex.getMessage());
-		}
-		finally	{
+		} finally {
 			this.donneControleur().donneConnexion().ferme();
 		}
 	}
-	
+
 	/**
 	 * Activation de la réception des messages du chat.
 	 */
-	public void active()
-	{
+	public void active() {
 		new Thread(this).start();
 	}
-	
+
 	/**
 	 * {@inheritDoc}
 	 *
 	 * @see felix.controleur.VueFelix
 	 */
 	@Override
-	public void affiche() 
-	{
+	public void affiche() {
 		this.fenetre.setVisible(true);
 	}
-	
+
 	/**
 	 * {@inheritDoc}
 	 *
 	 * @see felix.controleur.VueFelix
 	 */
 	@Override
-	public void ferme() 
-	{
+	public void ferme() {
 		this.fenetre.dispose();
 	}
 
-	
 }
