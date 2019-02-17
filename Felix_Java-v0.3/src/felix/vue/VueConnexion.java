@@ -57,6 +57,7 @@ public class VueConnexion extends VueFelix implements ActionListener, Runnable {
 	 * Le champs pour les messages (non éditable).
 	 */
 	private JTextField message;
+	private JLabel messageInfo;
 
 	/**
 	 * Le label de l'IP.
@@ -130,12 +131,19 @@ public class VueConnexion extends VueFelix implements ActionListener, Runnable {
 		/*
 		 * Message informatif
 		 */
-		this.message = new JTextField(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_DEFAUT"));
+		/*this.message = new JTextField(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_DEFAUT"));
 		this.message.setName(Felix.CONFIGURATION.getString("TEXT_FIELD_MESSAGE"));	// set name for Jemmy
 		this.message.setEditable(false);
 		this.message.setEnabled(false);
 		this.message.setPreferredSize(new Dimension(350, 20));
-		this.panelMessage.add(message);
+		this.panelMessage.add(message);*/
+		this.messageInfo = new JLabel(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_DEFAUT"));
+		this.messageInfo.setName(Felix.CONFIGURATION.getString("TEXT_FIELD_MESSAGE"));	// set name for Jemmy
+		//this.messageInfo.setEditable(false);
+		this.messageInfo.setEnabled(false);
+		this.messageInfo.setPreferredSize(new Dimension(350, 20));
+		this.panelMessage.add(messageInfo);
+
 
 		/**
 		 * Bouton de connexion
@@ -195,7 +203,9 @@ public class VueConnexion extends VueFelix implements ActionListener, Runnable {
 			try {
 				String ip = this.ipSaisie.getText();
 				int port = Integer.parseInt(this.portSaisie.getText());
-				this.message.setText(
+				/*this.message.setText(
+						String.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION"), ip, port));*/
+				this.messageInfo.setText(
 						String.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION"), ip, port));
 				this.buttonConnexion.setEnabled(false);
 				new Thread(this).start();
@@ -227,7 +237,9 @@ public class VueConnexion extends VueFelix implements ActionListener, Runnable {
 	public void afficheErreurCo() {
 		String ip = this.ipSaisie.getText();
 		int port = Integer.parseInt(this.portSaisie.getText());
-		this.message.setText(String
+		/*this.message.setText(String
+				.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION_IMPOSSIBLE"), ip, port));*/
+		this.messageInfo.setText(String
 				.format(Felix.CONFIGURATION.getString("FENETRE_CONNEXION_MESSAGE_CONNEXION_IMPOSSIBLE"), ip, port));
 		this.buttonConnexion.setEnabled(true);
 	}
