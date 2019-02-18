@@ -4,6 +4,8 @@
 ## Avancement
 Nous nous sommes penchés sur tous les tests à effectuer et avons développé les deux fonctionnalités. Cependant certains tests ne fonctionnent pas correctement... Cela ne semble pourtant pas être dû au développement qui lui, fonctionnent correctement en IHM. 
 
+Vous pourrez retrouver dans le `felix_cu.pdf` nos scénarios et les changements opérés dans le cu fournit au début du projet. 
+
 ## Problèmes rencontrés : 
 
 **FelixConnexionImpossible :**
